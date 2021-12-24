@@ -6,7 +6,12 @@ PROJECT(DPS VERSION 0.0.1)
 SET(CMAKE_CXX_STANDARD 17)
 SET(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Add subdirectories
+LIST(APPEND CMAKE_MODULE_PATH "third-party/spdlog/cmake")
+
+# Add Third-party directory
+ADD_SUBDIRECTORY(third-party)
+
+# Add src subdirectory
 ADD_SUBDIRECTORY(src)
 
 # Add tests
