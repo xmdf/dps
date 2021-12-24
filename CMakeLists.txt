@@ -1,14 +1,16 @@
-cmake_minimum_required(VERSION 3.17)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.17)
 
-project(PROJECT_NAME VERSION 0.0.1)
+PROJECT(DPS VERSION 0.0.1)
 
 # Set C++ standard
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+SET(CMAKE_CXX_STANDARD 17)
+SET(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add subdirectories
-add_subdirectory(src)
+ADD_SUBDIRECTORY(src)
 
 # Add tests
-enable_testing()
-add_subdirectory(tests)
+IF(DEFINED DPS_ENABLE_TESTS)
+    ENABLE_TESTING()
+    ADD_SUBDIRECTORY(tests)
+ENDIF()
