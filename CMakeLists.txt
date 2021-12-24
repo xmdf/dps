@@ -6,10 +6,11 @@ PROJECT(DPS VERSION 0.0.1)
 SET(CMAKE_CXX_STANDARD 17)
 SET(CMAKE_CXX_STANDARD_REQUIRED True)
 
-LIST(APPEND CMAKE_MODULE_PATH "third-party/spdlog/cmake")
+LIST(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 
-# Add Third-party directory
-ADD_SUBDIRECTORY(third-party)
+# Add submodules
+INCLUDE(add_git_submodule)
+add_submodule("third-party/spdlog/")
 
 # Add src subdirectory
 ADD_SUBDIRECTORY(src)
