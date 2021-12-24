@@ -1,2 +1,2 @@
-# cpp_template
-Template repo for C++ projects
+# Dynamic Pub Sub
+C++ implementation of a dynamic pub-sub network.
