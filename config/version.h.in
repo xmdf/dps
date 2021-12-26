@@ -1,0 +1,13 @@
+/**
+ * @file version.h
+ * @author xmdf
+ * @date 26 December 2021
+ * @brief Version config file used to generate version.h during build
+ */
+
+#pragma once
+
+#define DPS_VERSION "${CMAKE_PROJECT_VERSION}"
+#define DPS_VERSION_MAJOR "${CMAKE_PROJECT_VERSION_MAJOR}"
+#define DPS_VERSION_MINOR "${CMAKE_PROJECT_VERSION_MINOR}"
+#define DPS_VERSION_PATCH "${CMAKE_PROJECT_VERSION_PATCH}"

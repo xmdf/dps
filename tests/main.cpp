@@ -3,11 +3,13 @@
 //
 
 
+#include "dps.hpp"
+
 #include <spdlog/spdlog.h>
 
 int main()
 {
-    spdlog::info("is this going to work?");
+    spdlog::info("{}", dps::version());
 
     return 0;
 }
