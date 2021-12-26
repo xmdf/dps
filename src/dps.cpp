@@ -12,7 +12,7 @@
 
 namespace dps {
 
-    inline const char* version()
+    const char* version()
     {
         return DPS_VERSION;
     }
