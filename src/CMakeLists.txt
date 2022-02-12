@@ -1,6 +1,4 @@
 
-MESSAGE("CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
-
 # Set version.h
 CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/config/version.h.in ${CMAKE_BINARY_DIR}/version.h)
 INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR})
@@ -30,6 +28,9 @@ TARGET_INCLUDE_DIRECTORIES(dps PUBLIC
         "${CMAKE_BINARY_DIR}"
         "${CMAKE_CURRENT_SOURCE_DIR}"
         )
+
+TARGET_LINK_LIBRARIES(dps
+        spdlog)
 
 # TODO
 #install(TARGETS dps

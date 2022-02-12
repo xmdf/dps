@@ -10,13 +10,16 @@ LIST(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 
 # Add submodules
 INCLUDE(add_git_submodule)
-add_submodule("third-party/spdlog/")
+# get spdlog
+add_submodule("${CMAKE_SOURCE_DIR}/third-party/spdlog/")
 
 # Add src subdirectory
 ADD_SUBDIRECTORY(src)
 
 # Add tests
 IF(DEFINED DPS_ENABLE_TESTS)
+    # add gtest
+    add_submodule("${CMAKE_SOURCE_DIR}/third-party/googletest/")
     ENABLE_TESTING()
     ADD_SUBDIRECTORY(tests)
 ENDIF()

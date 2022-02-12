@@ -10,6 +10,7 @@
 
 namespace dps {
 
+    /// Returns current DPS version (major.minor.patch)
     const char* version();
 
 } // end namespace dps

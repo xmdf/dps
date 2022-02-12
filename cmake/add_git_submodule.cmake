@@ -1,6 +1,5 @@
-#
+
 # https://www.scivision.dev/cmake-git-submodule/
-#
 
 CMAKE_MINIMUM_REQUIRED(VERSION 3.17)
 
