@@ -7,7 +7,7 @@
 
 #include "dps.hpp"
 
-#include "version.h"
+#include "version.hpp"
 
 
 namespace dps {
@@ -16,7 +16,6 @@ namespace dps {
     {
         return DPS_VERSION;
     }
-
 
 
 } // end namespace dps

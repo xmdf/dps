@@ -9,3 +9,6 @@ C++ implementation of a dynamic pub-sub network.
 4. `cmake ..`
 5. `make`
 
+### References
+[cmake config version](https://riptutorial.com/cmake/example/32603/using-cmake-to-define-the-version-number-for-cplusplus-usage)
+
