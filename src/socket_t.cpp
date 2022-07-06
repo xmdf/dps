@@ -419,5 +419,19 @@ namespace dps {
 
         return Status::SUCCESS;
     }
+
+    //------------------------------------------------------
+    // socket_t::shutdown()
+    //------------------------------------------------------
+    Status socket_t::shutdown() const
+    {
+        if (::shutdown(this->socket_fd_, SHUT_RDWR) == -1) {
+            utils::print_errno();
+
+            return Status::FAIL;
+        }
+
+        return Status::SUCCESS;
+    }
     
 } // end namespace dps

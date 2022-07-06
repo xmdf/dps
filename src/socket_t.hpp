@@ -76,6 +76,8 @@ namespace dps {
 
         Status close();
 
+        Status shutdown() const;
+
         virtual ~socket_t();
 
         DPS_NON_COPYABLE_NOR_MOVABLE(socket_t)

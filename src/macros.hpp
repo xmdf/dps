@@ -10,15 +10,13 @@
 
 
 #if !defined DPS_NON_COPYABLE_NOR_MOVABLE
-#define DPS_NON_COPYABLE_NOR_MOVABLE(classname_) \
-  public: \
-    classname_ (const classname_ &) = delete; \
-    classname_ &operator= (const classname_ &) = delete; \
-    classname_ (classname_ &&) = delete; \
-    classname_ &operator= (classname_ &&) = delete;
+#define DPS_NON_COPYABLE_NOR_MOVABLE(classname_)                               \
+  public:                                                                      \
+    classname_ (const classname_&) = delete;                                   \
+    classname_ &operator= (const classname_&) = delete;                        \
+    classname_ (classname_&&) = delete;                                        \
+    classname_ &operator= (classname_&&) = delete;
 #endif
-
-
 
 
 #endif // __DPS_MACROS_HPP__
