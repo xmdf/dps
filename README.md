@@ -1,5 +1,5 @@
-# Dynamic Pub Sub
-C++ implementation of a dynamic pub-sub network.
+# Distributed Pub Sub
+C++ implementation of a distributed pub-sub network.
 
 
 ## Building

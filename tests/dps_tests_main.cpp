@@ -5,7 +5,7 @@
  * @brief Main driver for DPS tests
  */
 
-//#include ""
+#include "test_loop_thread_t.hpp"
 
 #include <gtest/gtest.h>
 

@@ -17,10 +17,10 @@ namespace dps::utils {
     void print_errno();
 
 
-    template <typename Rep_, typename Period_>
+    template <class Rep_, class Period_>
     bool timeout_has_occurred(
-        const std::chrono::time_point<std::chrono::steady_clock> & start,
-        const std::chrono::duration<Rep_, Period_> timeout)
+        const std::chrono::time_point<std::chrono::steady_clock> &start,
+        const std::chrono::duration<Rep_, Period_> &timeout)
     {
         return (std::chrono::steady_clock::now() - start) > timeout;
     }

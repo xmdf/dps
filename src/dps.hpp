@@ -10,7 +10,12 @@
 
 namespace dps {
 
-    /// Returns current DPS version (major.minor.patch)
+    /**
+     * Provides current DPS version (major.minor.patch),
+     * synchronized with CMakeLists.txt
+     *
+     * @return Current DPS version (major.minor.patch)
+     */
     const char* version();
 
 } // end namespace dps
